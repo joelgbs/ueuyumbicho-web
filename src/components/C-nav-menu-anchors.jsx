@@ -9,6 +9,7 @@ function Home() {
   );
 }
 
+
 function EducacionInicial() {
   const navigate = useNavigate();
   const handleClick = () => navigate('/educacion-inicial');
@@ -30,6 +31,14 @@ function BasicaSuperior() {
   const handleClick = () => navigate('/basica-superior');
   return (
     <a onClick={handleClick} className='nav__link nav__link--inside'>Básica Superior</a>
+  );
+}
+
+function Teachers() {
+  const navigate = useNavigate();
+  const handleClick = () => navigate('/Profesores');
+  return (
+    <a onClick={handleClick} className='nav__link nav__link--inside'>Profesores</a>
   );
 }
 
@@ -119,6 +128,7 @@ function Noticias() {
 
 export {
   Home,
+  Teachers,
   EducacionInicial,
   BasicaElementalMedia,
   BasicaSuperior,

@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home/P-home.jsx';
+import Teachers from './pages/Teachers/P-teacher.jsx';
 import EducacionInicial from './pages/Educative-offer/P-EducacionInicial.jsx';
 import EducacionMedia from './pages/Educative-offer/P-BasicaElementalMedia.jsx';
 import EducacionSuperior from './pages/Educative-offer/P-BasicaSuperior.jsx';
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/educacion-inicial" Component={EducacionInicial} />
         <Route path="/basica-elemental-media" Component={EducacionMedia} />
+        <Route path="/Profesores" Component={Teachers} />
         <Route path="/basica-superior" Component={EducacionSuperior} />
         <Route path="/bachillerato-general-unificado" Component={Bgu} />
         <Route path="/bachillerato-tecnico-contabilidad" Component={Btc} />

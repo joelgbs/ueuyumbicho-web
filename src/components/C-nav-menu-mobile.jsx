@@ -3,6 +3,7 @@ import '../css/floating-menu.css';
 import arrow from '../assets/arrow.svg'; // Asegúrate de que la ruta sea correcta
 import {
     Home,
+    Teachers,
     EducacionInicial,
     BasicaElementalMedia,
     BasicaSuperior,
@@ -119,6 +120,9 @@ function NavMenuMobile({ BotonExitmenufloat }) {
                 </li>
                 <li className='list__inside'>
                   <Contactanos />
+                </li>
+                <li className='list__inside'>
+                  <Teachers />
                 </li>
               </ul>
             </li>

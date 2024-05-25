@@ -2,6 +2,7 @@ import React from 'react';
 import { Mn, MnOption, MnOptionSubmenu } from '../components/C-MenuOptions.jsx';
 import {
     Home,
+    Teachers,
     EducacionInicial,
     BasicaElementalMedia,
     BasicaSuperior,
@@ -45,6 +46,7 @@ const DesktopNavMenu = () => {
           <Mn menuClass='submenu'>
           <MnOption> <QuienesSomos/> </MnOption>
           <MnOption> <MisionVision/> </MnOption>
+          <MnOption> <Teachers/> </MnOption>
           </Mn>
         </MnOptionSubmenu>
 
