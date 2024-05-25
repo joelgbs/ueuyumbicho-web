@@ -19,6 +19,10 @@
     justify-content: right;
     background-color: #fff;
     border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
 }
 .div-exit button{
     cursor: pointer;
@@ -56,12 +60,17 @@
 
 .list {
     width: 100%;
-    padding-bottom: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     border-radius: 0 16px 16px 0;
+    border-radius: 0.5rem;
     background-color: #fff;
+    padding-bottom: 35px;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
 }
 
 .list__item {
@@ -76,13 +85,12 @@
 }
 
 .list__button {
-    width: 100%;
     display: flex;
-    align-items: center;
+    align-items: left;
     gap: 1em;
-    text-align: left;
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .arrow .list__arrow {
@@ -102,10 +110,4 @@
     list-style: none;
     transition: height 0.4s;
     height: 0;
-}
-
-a{
-    width: 100%;
-    text-align: left;
-    margin-left: 0.6rem;
 }
