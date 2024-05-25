@@ -18,6 +18,7 @@
     align-items: center;
     justify-content: right;
     background-color: #fff;
+    border-radius: 0.5rem;
 }
 .div-exit button{
     cursor: pointer;
@@ -75,9 +76,11 @@
 }
 
 .list__button {
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 1em;
+    text-align: left;
     width: 70%;
     margin: 0 auto;
 }
@@ -99,4 +102,10 @@
     list-style: none;
     transition: height 0.4s;
     height: 0;
+}
+
+a{
+    width: 100%;
+    text-align: left;
+    margin-left: 0.6rem;
 }

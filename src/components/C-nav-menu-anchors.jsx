@@ -5,7 +5,7 @@ function Home() {
   const navigate = useNavigate();
   const handleClick = () => navigate('/');
   return (
-    <a onClick={handleClick} className='nav__link nav__link--inside'>Inicio</a>
+    <a onClick={handleClick} className='nav__link'>Inicio</a>
   );
 }
 
