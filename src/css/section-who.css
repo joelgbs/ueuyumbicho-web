@@ -1,0 +1,63 @@
+/* Estilos para la sección "who" */
+.section-who {
+    width: 100%;
+    height: 50vh;
+    /* background-color: yellowgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.who-info,
+.who-slider {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.who-info p {
+    margin: 2rem;
+    width: 80%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .section-who {
+        width: 100%;
+        min-height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15px;
+    }
+    .div-ubi{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15px;
+    }
+    .who-info,.who-slider {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 2rem;
+        overflow: hidden;
+    }
+    .who-info{
+        height: 100vh;
+        font-size: 0.8rem;
+    }
+}

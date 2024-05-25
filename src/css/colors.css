@@ -1,0 +1,187 @@
+:root {
+    /* Blue Shades */
+    --blue-darkest: #00008b;
+    --blue-darker: #0000cd;
+    --blue-dark: #1e90ff;
+    --blue-medium: #6495ed;
+    --blue-light: #87cefa;
+    --blue-lighter: #add8e6;
+    --blue-lightest: #e0ffff;
+  
+    /* Pastel Blue Shades */
+    --blue-pastel-darkest: #779ecb;
+    --blue-pastel-darker: #89c2d9;
+    --blue-pastel-dark: #a2d2ff;
+    --blue-pastel-medium: #bde0fe;
+    --blue-pastel-light: #d4e8fc;
+    --blue-pastel-lighter: #e3f2fd;
+    --blue-pastel-lightest: #ebf8ff;
+  
+    /* Transparent Blue Shades */
+    --blue-darkest-t: rgba(0, 0, 139, 0.8);
+    --blue-darker-t: rgba(0, 0, 205, 0.6);
+    --blue-dark-t: rgba(30, 144, 255, 0.4);
+    --blue-medium-t: rgba(100, 149, 237, 0.3);
+    --blue-light-t: rgba(135, 206, 250, 0.2);
+    --blue-lighter-t: rgba(173, 216, 230, 0.1);
+    --blue-lightest-t: rgba(224, 255, 255, 0.05);
+  
+    /* Pastel Transparent Blue Shades */
+    --blue-pastel-darkest-t: rgba(119, 158, 203, 0.8);
+    --blue-pastel-darker-t: rgba(137, 194, 217, 0.6);
+    --blue-pastel-dark-t: rgba(162, 210, 255, 0.4);
+    --blue-pastel-medium-t: rgba(189, 224, 254, 0.3);
+    --blue-pastel-light-t: rgba(212, 232, 252, 0.2);
+    --blue-pastel-lighter-t: rgba(227, 242, 253, 0.1);
+    --blue-pastel-lightest-t: rgba(235, 248, 255, 0.05);
+  
+    /* Black Shades */
+    --black-darkest: #000000;
+    --black-darker: #1c1c1c;
+    --black-dark: #363636;
+    --black-medium: #4f4f4f;
+    --black-light: #696969;
+    --black-lighter: #808080;
+    --black-lightest: #a9a9a9;
+  
+    /* Transparent Black Shades */
+    --black-darkest-t: rgba(0, 0, 0, 0.8);
+    --black-darker-t: rgba(28, 28, 28, 0.6);
+    --black-dark-t: rgba(54, 54, 54, 0.4);
+    --black-medium-t: rgba(79, 79, 79, 0.3);
+    --black-light-t: rgba(105, 105, 105, 0.2);
+    --black-lighter-t: rgba(128, 128, 128, 0.1);
+    --black-lightest-t: rgba(169, 169, 169, 0.05);
+  
+    /* White Shades */
+    --white-darkest: #dcdcdc;
+    --white-darker: #f5f5f5;
+    --white-dark: #fafafa;
+    --white-medium: #ffffff;
+  
+    /* Transparent White Shades */
+    --white-darkest-t: rgba(220, 220, 220, 0.8);
+    --white-darker-t: rgba(245, 245, 245, 0.6);
+    --white-dark-t: rgba(250, 250, 250, 0.4);
+    --white-medium-t: rgba(255, 255, 255, 0.2);
+  
+    /* Orange Shades */
+    --orange-darkest: #ff4500;
+    --orange-darker: #ff6347;
+    --orange-dark: #ff7f50;
+    --orange-medium: #ffa07a;
+    --orange-light: #ffb6c1;
+    --orange-lighter: #ffd700;
+    --orange-lightest: #ffdab9;
+  
+    /* Pastel Orange Shades */
+    --orange-pastel-darkest: #ffab76;
+    --orange-pastel-darker: #ffb74d;
+    --orange-pastel-dark: #ffc107;
+    --orange-pastel-medium: #ffcc80;
+    --orange-pastel-light: #ffe0b2;
+    --orange-pastel-lighter: #ffecb3;
+    --orange-pastel-lightest: #fff3e0;
+  
+    /* Transparent Orange Shades */
+    --orange-darkest-t: rgba(255, 69, 0, 0.8);
+    --orange-darker-t: rgba(255, 99, 71, 0.6);
+    --orange-dark-t: rgba(255, 127, 80, 0.4);
+    --orange-medium-t: rgba(255, 160, 122, 0.3);
+    --orange-light-t: rgba(255, 182, 193, 0.2);
+    --orange-lighter-t: rgba(255, 215, 0, 0.1);
+    --orange-lightest-t: rgba(255, 218, 185, 0.05);
+  
+    /* Pastel Transparent Orange Shades */
+    --orange-pastel-darkest-t: rgba(255, 171, 118, 0.8);
+    --orange-pastel-darker-t: rgba(255, 183, 77, 0.6);
+    --orange-pastel-dark-t: rgba(255, 193, 7, 0.4);
+    --orange-pastel-medium-t: rgba(255, 204, 128, 0.3);
+    --orange-pastel-light-t: rgba(255, 224, 178, 0.2);
+    --orange-pastel-lighter-t: rgba(255, 236, 179, 0.1);
+    --orange-pastel-lightest-t: rgba(255, 243, 224, 0.05);
+  
+    /* Red Shades */
+    --red-darkest: #8b0000;
+    --red-darker: #b22222;
+    --red-dark: #dc143c;
+    --red-medium: #ff0000;
+    --red-light: #ff6347;
+    --red-lighter: #ff7f7f;
+    --red-lightest: #ffb6c1;
+  
+    /* Pastel Red Shades */
+    --red-pastel-darkest: #f28b82;
+    --red-pastel-darker: #ef9a9a;
+    --red-pastel-dark: #e57373;
+    --red-pastel-medium: #ef5350;
+    --red-pastel-light: #f48fb1;
+    --red-pastel-lighter: #ff8a80;
+    --red-pastel-lightest: #ffcccc;
+  
+    /* Transparent Red Shades */
+    --red-darkest-t: rgba(139, 0, 0, 0.8);
+    --red-darker-t: rgba(178, 34, 34, 0.6);
+    --red-dark-t: rgba(220, 20, 60, 0.4);
+    --red-medium-t: rgba(255, 0, 0, 0.3);
+    --red-light-t: rgba(255, 99, 71, 0.2);
+    --red-lighter-t: rgba(255, 127, 127, 0.1);
+    --red-lightest-t: rgba(255, 182, 193, 0.05);
+  
+    /* Pastel Transparent Red Shades */
+    --red-pastel-darkest-t: rgba(242, 139, 130, 0.8);
+    --red-pastel-darker-t: rgba(239, 154, 154, 0.6);
+    --red-pastel-dark-t: rgba(229, 115, 115, 0.4);
+    --red-pastel-medium-t: rgba(239, 83, 80, 0.3);
+    --red-pastel-light-t: rgba(244, 143, 177, 0.2);
+    --red-pastel-lighter-t: rgba(255, 138, 128, 0.1);
+    --red-pastel-lightest-t: rgba(255, 204, 204, 0.05);
+  
+    /* Green Shades */
+    --green-darkest: #006400;
+    --green-darker: #008000;
+    --green-dark: #228b22;
+    --green-medium: #32cd32;
+    --green-light: #7cfc00;
+    --green-lighter: #90ee90;
+    --green-lightest: #98fb98;
+  
+    /* Pastel Green Shades */
+    --green-pastel-darkest: #77dd77;
+    --green-pastel-darker: #81c784;
+    --green-pastel-dark: #a8e6cf;
+    --green-pastel-medium: #b2fab4;
+    --green-pastel-light: #c3e88d;
+    --green-pastel-lighter: #d4edda;
+    --green-pastel-lightest: #e8f5e9;
+  
+    /* Transparent Green Shades */
+    --green-darkest-t: rgba(0, 100, 0, 0.8);
+    --green-darker-t: rgba(0, 128, 0, 0.6);
+    --green-dark-t: rgba(34, 139, 34, 0.4);
+    --green-medium-t: rgba(50, 205, 50, 0.3);
+    --green-light-t: rgba(124, 252, 0, 0.2);
+    --green-lighter-t: rgba(144, 238, 144, 0.1);
+    --green-lightest-t: rgba(152, 251, 152, 0.05);
+  
+    /* Pastel Transparent Green Shades */
+    --green-pastel-darkest-t: rgba(119, 221, 119, 0.8);
+    --green-pastel-darker-t: rgba(129, 199, 132, 0.6);
+    --green-pastel-dark-t: rgba(168, 230, 207, 0.4);
+    --green-pastel-medium-t: rgba(178, 250, 180, 0.3);
+    --green-pastel-light-t: rgba(195, 232, 141, 0.2);
+    --green-pastel-lighter-t: rgba(212, 237, 218, 0.1);
+    --green-pastel-lightest-t: rgba(232, 245, 233, 0.05);
+
+        /* Colores originales */
+        --fondo-azul-oscuro-colegio: #154360;
+        --fondo-azul-claro-colegio: #21618C;
+      
+        /* Colores más oscuros */
+        --fondo-azul-oscuro-colegio-d1: #0E3042; /* Un tono más oscuro */
+        --fondo-azul-oscuro-colegio-d2: #092231; /* Dos tonos más oscuros */
+      
+        --fondo-azul-claro-colegio-d1: #1A4D6F; /* Un tono más oscuro */
+        --fondo-azul-claro-colegio-d2: #13394F; /* Dos tonos más oscuros */
+  }
+  
