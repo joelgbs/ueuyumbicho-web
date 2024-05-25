@@ -1,62 +1,113 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const EducacionInicial = () => {
-  return <a href='index.html' className='nav__link nav__link--inside'>Educacion Inicial</a>;
-};
+function EducacionInicial() {
+  const navigate = useNavigate();
+  const handleClick = () => navigate('/educacion-inicial');
+  return (
+    <a onClick={handleClick} className='nav__link nav__link--inside'>Educación Inicial</a>
+  );
+}
 
-const BasicaElementalMedia = () => {
-  return <a href='index.html' className='nav__link nav__link--inside'>Basica, Elemental y Media</a>;
-};
+function BasicaElementalMedia() {
+  const navigate = useNavigate();
+  const handleClick = () => navigate('/basica-elemental-media');
+  return (
+    <a onClick={handleClick} className='nav__link nav__link--inside'>Básica, Elemental y Media</a>
+  );
+}
 
-const BasicaSuperior = () => {
-  return <a href='index.html' className='nav__link nav__link--inside'>Basica Superior</a>;
-};
+function BasicaSuperior() {
+  const navigate = useNavigate();
+  const handleClick = () => navigate('/basica-superior');
+  return (
+    <a onClick={handleClick} className='nav__link nav__link--inside'>Básica Superior</a>
+  );
+}
 
-const BachilleratoGeneralUnificado = () => {
-  return <a href='index.html' className='nav__link nav__link--inside'>Bachillerato General Unificado</a>;
-};
+function BachilleratoGeneralUnificado() {
+  const navigate = useNavigate();
+  const handleClick = () => navigate('/bachillerato-general-unificado');
+  return (
+    <a onClick={handleClick} className='nav__link nav__link--inside'>Bachillerato General Unificado</a>
+  );
+}
 
-const BachilleratoTecnicoContabilidad = () => {
-  return <a href='index.html' className='nav__link nav__link--inside'>Bachillerato Tecnico Contabilidad</a>;
-};
+function BachilleratoTecnicoContabilidad() {
+  const navigate = useNavigate();
+  const handleClick = () => navigate('/bachillerato-tecnico-contabilidad');
+  return (
+    <a onClick={handleClick} className='nav__link nav__link--inside'>Bachillerato Técnico Contabilidad</a>
+  );
+}
 
-const BachilleratoTecnicoInformatica = () => {
-  return <a href='index.html' className='nav__link nav__link--inside'>Bachillerato Tecnico Informatica</a>;
-};
+function BachilleratoTecnicoInformatica() {
+  const navigate = useNavigate();
+  const handleClick = () => navigate('/bachillerato-tecnico-informatica');
+  return (
+    <a onClick={handleClick} className='nav__link nav__link--inside'>Bachillerato Técnico Informática</a>
+  );
+}
 
-const QuienesSomos = () => {
-  return <a href='index.html' className='nav__link nav__link--inside'>¿Quienes somos?</a>;
-};
+function QuienesSomos() {
+  const navigate = useNavigate();
+  const handleClick = () => navigate('/quienes-somos');
+  return (
+    <a onClick={handleClick} className='nav__link nav__link--inside'>¿Quiénes somos?</a>
+  );
+}
 
-const MisionVision = () => {
-  return <a href='index.html' className='nav__link nav__link--inside'>Mision y Vision</a>;
-};
+function MisionVision() {
+  const navigate = useNavigate();
+  const handleClick = () => navigate('/mision-vision');
+  return (
+    <a onClick={handleClick} className='nav__link nav__link--inside'>Misión y Visión</a>
+  );
+}
 
-const Contactanos = () => {
-  return <a href='index.html' className='nav__link nav__link--inside'>Contactanos</a>;
-};
+function Contactanos() {
+  const navigate = useNavigate();
+  const handleClick = () => navigate('/contactanos');
+  return (
+    <a onClick={handleClick} className='nav__link nav__link--inside'>Contáctanos</a>
+  );
+}
 
-const MatriculaAutomatica = () => {
-  return <a href='https://juntos.educacion.gob.ec/index.php/costa-consulta/consulta' className='nav__link nav__link--inside'>Matricula Automatica</a>;
-};
+function MatriculaAutomatica() {
+  return (
+    <a href='https://juntos.educacion.gob.ec/index.php/costa-consulta/consulta' className='nav__link nav__link--inside'>Matrícula Automática</a>
+  );
+}
 
-const CarmentaWeb = () => {
-  return <a href='https://academico.educarecuador.gob.ec/carmenta-web/' className='nav__link nav__link--inside'>Carmenta Web</a>;
-};
+function CarmentaWeb() {
+  return (
+    <a href='https://academico.educarecuador.gob.ec/carmenta-web/' className='nav__link nav__link--inside'>Carmenta Web</a>
+  );
+}
 
-const HorariosClase = () => {
-  return <a href='index.html' className='nav__link nav__link--inside'>Horarios de clase</a>;
-};
+function HorariosClase() {
+  const navigate = useNavigate();
+  const handleClick = () => navigate('/horarios-clase');
+  return (
+    <a onClick={handleClick} className='nav__link nav__link--inside'>Horarios de Clase</a>
+  );
+}
 
-const ReportesAcademicos = () => {
-  return <a href='index.html' className='nav__link nav__link--inside'>Reportes academicos</a>;
-};
+function ReportesAcademicos() {
+  const navigate = useNavigate();
+  const handleClick = () => navigate('/reportes-academicos');
+  return (
+    <a onClick={handleClick} className='nav__link nav__link--inside'>Reportes Académicos</a>
+  );
+}
 
-const Noticias = () => {
-  return <a href='index.html' className='nav__link'>Noticias</a>;
-};
-
-
+function Noticias() {
+  const navigate = useNavigate();
+  const handleClick = () => navigate('/noticias');
+  return (
+    <a onClick={handleClick} className='nav__link'>Noticias</a>
+  );
+}
 
 export {
   EducacionInicial,
