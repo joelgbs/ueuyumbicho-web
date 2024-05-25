@@ -1,6 +1,14 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
+function Home() {
+  const navigate = useNavigate();
+  const handleClick = () => navigate('/');
+  return (
+    <a onClick={handleClick} className='nav__link nav__link--inside'>Inicio</a>
+  );
+}
+
 function EducacionInicial() {
   const navigate = useNavigate();
   const handleClick = () => navigate('/educacion-inicial');
@@ -110,6 +118,7 @@ function Noticias() {
 }
 
 export {
+  Home,
   EducacionInicial,
   BasicaElementalMedia,
   BasicaSuperior,

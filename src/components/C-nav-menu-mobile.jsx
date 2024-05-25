@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import '../css/floating-menu.css';
 import arrow from '../assets/arrow.svg'; // Asegúrate de que la ruta sea correcta
 import {
+    Home,
     EducacionInicial,
     BasicaElementalMedia,
     BasicaSuperior,
@@ -69,6 +70,12 @@ function NavMenuMobile({ BotonExitmenufloat }) {
             </button>
           </div>
           <ul className='list'>
+            {/* home */}
+            <li className='list__item'>
+              <div className='list__button'>
+                <Home />
+              </div>
+            </li>
             {/* Oferta Academica */}
             <li className='list__item list__item--click'>
               <div className='list__button list__button--click'>

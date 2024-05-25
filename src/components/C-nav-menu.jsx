@@ -1,6 +1,7 @@
 import React from 'react';
 import { Mn, MnOption, MnOptionSubmenu } from '../components/C-MenuOptions.jsx';
 import {
+    Home,
     EducacionInicial,
     BasicaElementalMedia,
     BasicaSuperior,
@@ -21,6 +22,7 @@ const DesktopNavMenu = () => {
   return (
     <div className='menu-horizontal'>
       <Mn menuClass='menu'>
+      <MnOption><Home/></MnOption>
         {/* Oferta Educativa */}
         <MnOptionSubmenu anchorName='Oferta Educativa'>
           <Mn menuClass='submenu'>
