@@ -89,6 +89,7 @@ const OpinionForm = () => {
             <h1>Escribe tu opinión sobre nuestra institución</h1>
             <form onSubmit={handleSendOpinion}>
                 <textarea
+                className='textareaopinion'
                     name="txtaopinion"
                     placeholder="Escribe tu opinión aquí"
                     value={opinion}

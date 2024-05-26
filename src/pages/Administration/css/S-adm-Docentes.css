@@ -1,0 +1,114 @@
+.body-Adocentes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.body-Adocentes form{
+    width: 80vw;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.upload-images{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem;
+}
+.upload-info{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.upload-info h3{
+    padding: 10px;
+    font-weight: 450;
+}
+.upload-info label{
+    padding: 10px;
+}
+.upload-info input{
+    padding: 12px;
+    margin-left: 10px;
+    max-width: 90%;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    border: 1px solid #000;
+}
+.alert{
+    width: 100%;
+    text-align: center;
+}
+.upload-info textarea{
+    height: 15vh;
+    padding: 10px;
+    max-width: 90%;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    border: 1px solid #000;
+    margin-bottom: 1rem;
+}
+.upload-info button{
+    margin-left: 5em;
+}
+
+/* codigo nuevo tabla */
+/* CSS para la tabla */
+.table-style {
+    border-collapse: collapse; /* Combina los bordes de las celdas en una sola línea */
+    width: 100%; /* Ancho completo de la tabla */
+}
+
+/* CSS para las celdas */
+.table-style td, .table-style th {
+    border: 1px solid #dddddd; /* Establece el borde de todas las celdas */
+    text-align: left; /* Alineación del texto a la izquierda */
+    padding: 8px; /* Espaciado interno de las celdas */
+}
+
+/* CSS para las filas impares */
+.table-style tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Color de fondo para las filas impares */
+}
+
+/* CSS para el encabezado de la tabla */
+.table-style th {
+    background-color: #dddddd; /* Color de fondo para el encabezado de la tabla */
+    color: black; /* Color del texto */
+}
+
+
+/* codigo anterior tabla */
+
+
+td{
+    padding: 10px;
+    font-size: 0.9rem;
+}
+td img{
+    padding: 10px;
+}
+
+td button{
+    padding: 5px;
+    width: 8vw;
+    margin-bottom: 0.5rem;
+}
