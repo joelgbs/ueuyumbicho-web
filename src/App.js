@@ -14,6 +14,9 @@ import MissionVision from './pages/Mission-vision/P-Mission-vision.jsx';
 import Horarios from './pages/Schedules/P-Schedules.jsx';
 import Reports from './pages/Reports/P-Reports.jsx';
 import News from './pages/News/P-News.jsx';
+import Admin from './pages/Administration/P-administration.jsx'
+import Editors from './pages/Editors/P-editors.jsx';
+
 
 function App() {
   return (
@@ -33,6 +36,8 @@ function App() {
         <Route path="/horarios-clase" Component={Horarios} />
         <Route path="/reportes-academicos" Component={Reports} />
         <Route path="/noticias" Component={News} />
+        <Route path="/Administracion" Component={Admin} />
+        <Route path="/Editor" Component={Editors} />
       </Routes>
     </Router>
   );
