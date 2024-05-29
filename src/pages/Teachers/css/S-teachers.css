@@ -1,0 +1,64 @@
+.teacher-body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card-content-T{
+    /* background-color: yellowgreen; */
+    width: 75em;
+    height: 60vh;
+    padding: 10px;
+    display: flex;
+    margin: 1rem;
+}
+
+.imagen-teacher{
+    /* background-color: violet; */
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagen-teacher img{
+    height: 100%;
+}
+.info-teacher{
+    width: 70%;
+    height: 100%;
+    /* background-color: tomato; */
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 1024px) {
+    .card-content-T{
+        /* background-color: yellowgreen; */
+        width: 100%;
+        height: 100vh;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .imagen-teacher{
+        /* background-color: violet; */
+        height: 50%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .info-teacher{
+        width: 100%;
+        height: 50%;
+        /* background-color: tomato; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
