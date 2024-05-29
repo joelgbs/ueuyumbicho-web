@@ -23,17 +23,17 @@ function Teachers() {
   };
 
   useEffect(() => {
-    // Obtener los docentes de la base de datos al cargar el componente
     const docentesRef = firebase.database().ref('docentes');
-    docentesRef.on('value', (snapshot) => {
-      const docentesData = snapshot.val();
-      if (docentesData) {
-        const docentesArray = Object.entries(docentesData).map(([id, docente]) => ({ id, ...docente }));
-        setDocentes(docentesArray);
-      }
+    
+    // Escucha cambios en la base de datos y actualiza el estado
+    docentesRef.on('child_added', (snapshot) => {
+      const docenteData = snapshot.val();
+      const newDocente = { id: snapshot.key, ...docenteData };
+      setDocentes((prevDocentes) => [newDocente, ...prevDocentes]);
     });
-    // Detener la escucha al desmontar el componente
-    return () => docentesRef.off('value');
+
+    // Detiene la escucha al desmontar el componente
+    return () => docentesRef.off('child_added');
   }, []);
 
   return (

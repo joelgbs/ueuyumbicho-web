@@ -2,6 +2,7 @@ import React from "react";
 import './css/S-teachers.css'
 
 function CardTeacher(props){
+    document.body.style.overflow = '';
     return(
         <div className="card-content-T">
             <div className="imagen-teacher">

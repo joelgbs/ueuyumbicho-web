@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function Editors(){
+    document.body.style.overflow = '';
     const navigate = useNavigate();
 
     useEffect(() => {

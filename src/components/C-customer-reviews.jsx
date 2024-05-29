@@ -113,7 +113,7 @@ const OpinionList = () => {
         onValue(opinionesRef, (snapshot) => {
             const opinionesData = snapshot.val();
             if (opinionesData) {
-                const opinionesArray = Object.values(opinionesData);
+                const opinionesArray = Object.values(opinionesData).reverse(); // Invertir el orden del array
                 setOpiniones(opinionesArray);
             }
         });

@@ -25,6 +25,7 @@ if (!firebase.apps.length) {
 }
 
 function Contact() {
+    document.body.style.overflow = '';
     const [menuVisible, setMenuVisible] = useState(false);
     const [consulta, setConsulta] = useState('');
     const [nombre, setNombre] = useState('');

@@ -5,6 +5,7 @@ import Minportada from '../../components/C-min-portada.jsx';
 import fotoportada from '../../assets/colegio/foto-patio-1.jpg';
 
 function EducacionMedia(){
+  document.body.style.overflow = '';
   const [menuVisible, setMenuVisible] = useState(false);
   const showMenu = () => {
     setMenuVisible(true);

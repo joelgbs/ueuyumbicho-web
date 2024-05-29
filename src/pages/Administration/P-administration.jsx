@@ -9,6 +9,7 @@ import {AformUsuarios, AtableUsuarios} from './P-adm-usuarios.jsx';
 import MensajesTable from './P-adm-contactanos.jsx';
 
 function Admin() {
+    document.body.style.overflow = '';
     const [visibleSection, setVisibleSection] = useState('docentes');
     const [isMobile, setIsMobile] = useState(false);
     const navigate = useNavigate();

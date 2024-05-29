@@ -15,7 +15,7 @@ import {NavMenuMobile, NavMenuMobileButton} from '../../components/C-nav-menu-mo
 
 
 function Home() {
-  
+  document.body.style.overflow = '';
   const [menuVisible, setMenuVisible] = useState(false);
 
   const showMenu = () => {
