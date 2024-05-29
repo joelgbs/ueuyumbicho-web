@@ -28,3 +28,12 @@
     position: relative;
     z-index: 2;
 }
+@media screen and (max-width: 1024px) {
+    .min-portada {
+        height: 12vh;
+        display: block;
+    }
+    .min-portada h1 {
+        padding-top: 0.5rem;
+    }
+}

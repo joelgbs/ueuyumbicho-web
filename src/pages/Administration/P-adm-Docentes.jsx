@@ -120,12 +120,14 @@ function Tabladocentes() {
             const docentesData = snapshot.val();
             if (docentesData) {
                 const docentesArray = Object.entries(docentesData).map(([id, docente]) => ({ id, ...docente }));
-                setDocentes(docentesArray);
+                // Invertir el orden de los docentes
+                setDocentes(docentesArray.reverse());
             }
         });
         // Detener la escucha al desmontar el componente
         return () => docentesRef.off('value');
     }, []);
+
 
     const handleEdit = (id) => {
         const docente = docentes.find((d) => d.id === id);

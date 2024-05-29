@@ -1,15 +1,30 @@
-.body-Adocentes{
+/* .body-horarios{
     width: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.add-docentes{
+.body-horarios form{
+    width: 80vw;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.body-horarios{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add-horarios{
     width: 100%;
     height: 100vh;
 }
-.body-Adocentes form{
+.body-horarios form{
     width: 80vw;
     height: 100%;
     display: inline-flex;
@@ -30,49 +45,16 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
-.upload-info h3{
-    padding: 10px;
-    font-weight: 450;
-    margin-top: 2rem;
-}
+
 .upload-info label{
     padding: 10px;
 }
-.upload-info input{
-    padding: 12px;
-    margin-left: 10px;
-    max-width: 90%;
-    outline: none;
-    border: none;
-    border-radius: 0.5rem;
-    -webkit-border-radius: 0.5rem;
-    -moz-border-radius: 0.5rem;
-    -ms-border-radius: 0.5rem;
-    -o-border-radius: 0.5rem;
-    border: 1px solid #000;
-}
-.alert{
-    width: 100%;
-    text-align: center;
-}
-.upload-info textarea{
-    height: 15vh;
-    padding: 10px;
-    max-width: 90%;
-    margin-left: 10px;
-    border: none;
-    outline: none;
-    border-radius: 0.5rem;
-    -webkit-border-radius: 0.5rem;
-    -moz-border-radius: 0.5rem;
-    -ms-border-radius: 0.5rem;
-    -o-border-radius: 0.5rem;
-    border: 1px solid #000;
-    margin-bottom: 1rem;
-}
+
 .upload-info button{
     margin-left: 5em;
+
 }
 
 /* codigo nuevo tabla */
@@ -116,4 +98,12 @@ td button{
     padding: 5px;
     width: 8vw;
     margin-bottom: 0.5rem;
+}
+
+select{
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+option{
+    padding: 10px;
 }

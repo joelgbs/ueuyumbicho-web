@@ -56,3 +56,15 @@
     color: #000;
     padding-left: 10px;
 }
+.content-docentes, .content-horarios{
+    width: 100%;
+    height: 100%;
+}
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+    flex-direction: column;
+}
