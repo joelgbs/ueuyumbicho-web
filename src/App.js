@@ -9,14 +9,15 @@ import Bgu from './pages/Educative-offer/P-BachilleratoGeneralUnificado.jsx';
 import Btc from './pages/Educative-offer/P-BachilleratoTecnicoContabilidad.jsx';
 import Bti from './pages/Educative-offer/P-BachilleratoTecnicoInformatica.jsx';
 import About from './pages/About-us/P-About-us.jsx';
-import Contact from './pages/Contact/P-Contact.jsx'
+import Contact from './pages/Contact/P-Contact.jsx';
 import MissionVision from './pages/Mission-vision/P-Mission-vision.jsx';
 import Horarios from './pages/Schedules/P-Schedules.jsx';
 import Reports from './pages/Reports/P-Reports.jsx';
 import News from './pages/News/P-News.jsx';
-import Admin from './pages/Administration/P-administration.jsx'
+import Admin from './pages/Administration/P-administration.jsx';
 import Editors from './pages/Editors/P-editors.jsx';
-
+import LoginPass from './pages/P-login.jsx';
+import LibratyVen from './pages/library/P-library.jsx'
 
 function App() {
   return (
@@ -38,6 +39,8 @@ function App() {
         <Route path="/noticias" Component={News} />
         <Route path="/Administracion" Component={Admin} />
         <Route path="/Editor" Component={Editors} />
+        <Route path="/login" Component={LoginPass}/>
+        <Route path="/library" Component={LibratyVen}/>
       </Routes>
     </Router>
   );

@@ -1,0 +1,30 @@
+.LoginPass-content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.LoginPass-content form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.LoginPass-content img{
+    height: 70px;
+}
+.LoginPass-content label{
+    width: 22em;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+.LoginPass-content input{
+    width: 25em;
+    outline: none;
+    padding: 5px;
+}
+.LoginPass-content button{
+    width: 25em;
+    margin-top: 2rem;
+}

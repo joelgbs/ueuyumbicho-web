@@ -1,23 +1,21 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function Editors(){
+function LibratyVen() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        // Recoger el token almacenado en el almacenamiento local del navegador
+        // Verificar si hay un token almacenado en el almacenamiento local
         const token = localStorage.getItem('token');
-
-        // Verificar si hay un token almacenado
         if (!token) {
             // Si no hay token, redirigir al usuario a la ventana de inicio de sesión
             navigate('/login');
         }
     }, [navigate]);
 
-    return(
-        <h1>Página de Editores</h1>
+    return (
+        <h1>Bienvenido a la librería</h1>
     );
 }
 
-export default Editors;
+export default LibratyVen;

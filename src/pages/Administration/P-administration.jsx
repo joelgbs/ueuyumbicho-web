@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './css/S-administration.css';
+import { useNavigate } from 'react-router-dom';
 import ErrorPage from '../P-error.jsx';
 import { Adocentes, Tabladocentes } from './P-adm-Docentes.jsx';
 import { Ahorarios, Tablahorarios } from './P-adm-horarios.jsx';
@@ -10,6 +11,7 @@ import MensajesTable from './P-adm-contactanos.jsx';
 function Admin() {
     const [visibleSection, setVisibleSection] = useState('docentes');
     const [isMobile, setIsMobile] = useState(false);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const checkScreenSize = () => {
@@ -19,10 +21,17 @@ function Admin() {
         checkScreenSize(); // Check on initial render
         window.addEventListener('resize', checkScreenSize); // Check on window resize
 
+        // Verificar si hay un token almacenado en el almacenamiento local
+        const token = localStorage.getItem('token');
+        if (!token) {
+            // Si no hay token, redirigir al usuario a la ventana de inicio de sesión
+            navigate('/login');
+        }
+
         return () => {
             window.removeEventListener('resize', checkScreenSize); // Cleanup listener on unmount
         };
-    }, []);
+    }, [navigate]);
 
     const handleMenuClick = (section) => {
         setVisibleSection(section);
@@ -36,6 +45,7 @@ function Admin() {
             />
         );
     }
+
 
     return (
         <div className='body-administracion'>
