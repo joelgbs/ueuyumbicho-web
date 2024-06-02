@@ -1,0 +1,9 @@
+.noticias-card-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: center;
+}

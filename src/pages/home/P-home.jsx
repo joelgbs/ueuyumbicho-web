@@ -1,6 +1,6 @@
 import '../../App.css';
 import './css/S-home.css'
-import React, { useState } from 'react';
+import React, { useState,useRef } from 'react';
 import Slider from '../../components/C-Slider.jsx';
 import NewsCard from '../../components/C-card-noticias.jsx';
 import { OpinionForm, OpinionList }from '../../components/C-customer-reviews.jsx';
@@ -26,6 +26,53 @@ function Home() {
     document.body.style.overflow = ''; // Habilita los scrolls en el body
   };
 
+  const containerRef = useRef(null);
+
+  const handleMouseDown = (e) => {
+      const container = containerRef.current;
+      container.isDown = true;
+      container.startX = e.pageX - container.offsetLeft;
+      container.scrollLeft = container.scrollLeft;
+  };
+
+  const handleMouseLeave = () => {
+      const container = containerRef.current;
+      container.isDown = false;
+  };
+
+  const handleMouseUp = () => {
+      const container = containerRef.current;
+      container.isDown = false;
+  };
+
+  const handleMouseMove = (e) => {
+      const container = containerRef.current;
+      if (!container.isDown) return;
+      e.preventDefault();
+      const x = e.pageX - container.offsetLeft;
+      const walk = (x - container.startX) * 2; // Ajusta la velocidad de desplazamiento
+      container.scrollLeft = container.scrollLeft - walk;
+  };
+
+  const handleTouchStart = (e) => {
+      const container = containerRef.current;
+      container.isDown = true;
+      container.startX = e.touches[0].pageX - container.offsetLeft;
+      container.scrollLeft = container.scrollLeft;
+  };
+
+  const handleTouchEnd = () => {
+      const container = containerRef.current;
+      container.isDown = false;
+  };
+
+  const handleTouchMove = (e) => {
+      const container = containerRef.current;
+      if (!container.isDown) return;
+      const x = e.touches[0].pageX - container.offsetLeft;
+      const walk = (x - container.startX) * 2; // Ajusta la velocidad de desplazamiento
+      container.scrollLeft = container.scrollLeft - walk;
+  };
   return (
     <div className="App">
       {menuVisible && <NavMenuMobile BotonExitmenufloat={hideMenu} />}
@@ -65,6 +112,13 @@ function Home() {
         <h1 className='h1-Oac'>Conoce nuestras Ofertas Academicas</h1>
         <p className='P-Oac'>La Unidad Educativa Uyumbicho brinda una amplia variedad de programas académicos diseñados para satisfacer las necesidades e intereses individuales de nuestros estudiantes.</p>
         <div className="Oac-content">
+          <div 
+            className="oac-card-content"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+            ref={containerRef}
+          >
           <Card
             imagen={Einicial}
             title='Educacion Inicial'
@@ -89,6 +143,7 @@ function Home() {
             info='Guiamos a los jóvenes hacia la excelencia académica y la exploración de sus intereses.'
             link='/bachillerato-general-unificado'
           />
+          </div>
         </div>
       </div>
       <div className='div-opiniones'>

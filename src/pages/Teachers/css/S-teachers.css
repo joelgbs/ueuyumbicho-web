@@ -6,11 +6,16 @@
     justify-content: center;
     flex-direction: column;
 }
-.teacher-body h1{
+.Tb-h1{
     font-size: 3rem;
     font-weight: 400;
+    width: 100%;
+    text-align: center;
 }
-
+.Tb-p{
+    width: 100%;
+    text-align: center;
+}
 .card-content-T{
     /* background-color: yellowgreen; */
     width: 75em;

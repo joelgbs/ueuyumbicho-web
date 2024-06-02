@@ -5,7 +5,7 @@
     flex-wrap: wrap;
 }
 .Hpm-sides{
-    width: 50vw;
+    width: 45vw;
     margin-top: 1rem;
     margin-bottom: 1rem;
     height: auto;
@@ -149,6 +149,19 @@ footer{
     width: 100%;
     text-align: center;
 }
+.oac-card-content {
+    display: flex; /* Usar flexbox para alineación horizontal */
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    white-space: nowrap; /* Evita el salto de línea dentro del contenedor */
+    scroll-behavior: smooth; /* Desplazamiento suave al usar scroll */
+    -webkit-overflow-scrolling: touch; /* Suaviza el desplazamiento en dispositivos iOS */
+    touch-action: pan-x; /* Permite solo el desplazamiento horizontal */
+    padding: 10px; /* Asegura que haya espacio alrededor del contenido */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    width: 100vw; /* Asegura que ocupe el ancho total de la pantalla */
+    overflow-y: hidden; /* Oculta el desbordamiento vertical */
+}
+
 @media only screen and (max-width: 768px) {
     .Hpm-sides{
         width: 100%;

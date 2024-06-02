@@ -24,8 +24,8 @@ function Teachers() {
         <Cnav showMenu={showMenu} />
       </div>
       <div className="teacher-body">
-        <h1>Conoce a nuestros Docentes</h1>
-        <p>Conoce a nuestros talentosos profesores, dedicados a guiar tu aprendizaje con experiencia y amabilidad. Te invitamos a explorar un mundo de conocimiento junto a ellos.</p>
+        <h1 className='Tb-h1'>Conoce a nuestros Docentes</h1>
+        <p className='Tb-p'>Conoce a nuestros talentosos profesores, dedicados a guiar tu aprendizaje con experiencia y amabilidad. Te invitamos a explorar un mundo de conocimiento junto a ellos.</p>
         <SectionTeachers area='Vicerrectorado'/>
         <SectionTeachers area='Inspeccion'/>
         <SectionTeachers area='Emprendimiento' />

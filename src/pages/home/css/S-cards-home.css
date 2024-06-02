@@ -10,6 +10,7 @@
     -moz-border-radius: 0.5rem;
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
+    flex: 0 0 auto; /* Previene que las tarjetas se encojan o se expandan */
 }
 .card-title-h1{
     margin: 0.5rem;
@@ -19,12 +20,16 @@
 .card-imagen-img{
     width: 100%;
 }
-.card-info-p{
+.card-info-p {
     font-size: 0.9rem;
     margin-left: 0.5rem;
     margin-bottom: 0.5rem;
     color: #4d4c4c;
+    word-wrap: break-word; /* Permite que las palabras largas se dividan y no se desborden */
+    overflow-wrap: break-word; /* Funciona similar a word-wrap para manejar desbordamientos */
+    white-space: normal; /* Permite que el texto se divida en líneas */
 }
+
 .card-link-a{
     font-size: 0.9rem;
     margin-left: 0.5rem;

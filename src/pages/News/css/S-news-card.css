@@ -1,0 +1,25 @@
+
+.content-news-cards {
+    width: auto; /* Ancho del div ajustado automáticamente al contenido */
+    overflow-x: hidden; /* Ocultar el scroll horizontal */
+    white-space: nowrap; /* Evitar el salto de línea del contenido */
+}
+.news-content{
+    width: 100%;
+}
+.news-h1{
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.news-span{
+    margin-left: 2rem;
+}
+.content-news-cards img{
+    height: 50vh;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.news-p{
+    padding: 20px;
+    margin-bottom: 2rem;
+}
