@@ -86,7 +86,8 @@ const OpinionForm = () => {
     // Renderiza el formulario de opinión
     return (
         <div className="input-opiniones">
-            <h1>Escribe tu opinión sobre nuestra institución</h1>
+           <h1 className='h1-opiniones'>Escribe tu opinión sobre nuestra institución</h1>
+            <span className='span-opiniones'>Tu opinión es invaluable para nosotros y nos ayuda a mejorar continuamente.</span>
             <form onSubmit={handleSendOpinion}>
                 <textarea
                 className='textareaopinion'

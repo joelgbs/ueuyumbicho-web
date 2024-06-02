@@ -1,0 +1,108 @@
+.container {
+    max-width: 32rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .title {
+    font-size: 1.875rem;
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    color: #6B7280; /* Gray-500 */
+    color: var(--color-gray-400); /* For dark mode */
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .label {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .input, .textarea {
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 0.375rem;
+    border: 1px solid #D1D5DB; /* Border color */
+    background-color: #F9FAFB; /* Background color */
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+  }
+  
+  .textarea {
+    min-height: 200px;
+    resize: vertical;
+  }
+  
+  .input:focus, .textarea:focus {
+    outline: none;
+    border-color: #3B82F6; /* Focus ring color */
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* Focus ring shadow */
+  }
+  
+  .input::placeholder, .textarea::placeholder {
+    color: #9CA3AF; /* Placeholder color */
+  }
+  
+  .button {
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    height: 2.5rem;
+    width: 100%;
+    background-color: #000000;
+    /*Primarycolor*/color: #FFFFFF;
+    /*Primaryforegroundcolor*/transition: background-color 0.2s  ;
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    -ms-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+}
+  
+  .button:hover {
+    border: none;
+    background-color: #2563EB; /* Primary hover color */
+    color: white;
+  }
+  
+  .button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* Focus ring shadow */
+  }
+  
+  .button:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  .peer-disabled:cursor-not-allowed {
+    cursor: not-allowed;
+  }
+  
+  .peer-disabled:opacity-70 {
+    opacity: 0.7;
+  }
+  

@@ -18,6 +18,7 @@ import {
     HorariosClase,
     ReportesAcademicos,
     Noticias,
+    Libreria
 } from './C-nav-menu-anchors.jsx';
 
 function NavMenuMobile({ BotonExitmenufloat }) {
@@ -65,7 +66,7 @@ function NavMenuMobile({ BotonExitmenufloat }) {
         <div className='floating-menu'>
           <div className='div-exit'>
             <button onClick={BotonExitmenufloat}>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000" fill="none">
                 <path d="M19.0005 4.99988L5.00045 18.9999M5.00045 4.99988L19.0005 18.9999" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </button>
@@ -75,6 +76,12 @@ function NavMenuMobile({ BotonExitmenufloat }) {
             <li className='list__item'>
               <div className='list__button'>
                 <Home />
+              </div>
+            </li>
+            {/* profesores */}
+            <li className='list__item'>
+              <div className='list__button'>
+                <Teachers />
               </div>
             </li>
             {/* Oferta Academica */}
@@ -108,7 +115,7 @@ function NavMenuMobile({ BotonExitmenufloat }) {
             {/* Nosotros */}
             <li className='list__item list__item--click'>
               <div className='list__button list__button--click'>
-                <span className='nav__link'>Nosotros</span>
+                <span className='nav__link'>Institucion</span>
                 <img src={arrow} alt='arrow' className='list__arrow' />
               </div>
               <ul className='list__show'>
@@ -120,9 +127,6 @@ function NavMenuMobile({ BotonExitmenufloat }) {
                 </li>
                 <li className='list__inside'>
                   <Contactanos />
-                </li>
-                <li className='list__inside'>
-                  <Teachers />
                 </li>
               </ul>
             </li>
@@ -140,22 +144,12 @@ function NavMenuMobile({ BotonExitmenufloat }) {
                 <li className='list__inside'>
                   <CarmentaWeb />
                 </li>
-              </ul>
-            </li>
-  
-            {/* Estudiantes */}
-            <li className='list__item list__item--click'>
-              <div className='list__button list__button--click'>
-                <span className='nav__link'>Estudiantes</span>
-                <img src={arrow} alt='arrow' className='list__arrow' />
-              </div>
-              <ul className='list__show'>
                 <li className='list__inside'>
                   <HorariosClase />
                 </li>
-                <li className='list__inside'>
+                {/* <li className='list__inside'>
                   <ReportesAcademicos />
-                </li>
+                </li> */}
               </ul>
             </li>
   
@@ -163,6 +157,12 @@ function NavMenuMobile({ BotonExitmenufloat }) {
             <li className='list__item'>
               <div className='list__button'>
                 <Noticias />
+              </div>
+            </li>
+            {/* libreria */}
+            <li className='list__item'>
+              <div className='list__button'>
+                <Libreria />
               </div>
             </li>
           </ul>
@@ -174,7 +174,7 @@ function NavMenuMobile({ BotonExitmenufloat }) {
 function NavMenuMobileButton(props){
     return (
         <button onClick={props.BotoOpenMenuFloat} className='button-menu-float'>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#fefefe" fill="none">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000" fill="none">
             <path d="M4 5L20 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             <path d="M4 12L20 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             <path d="M4 19L20 19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

@@ -13,7 +13,7 @@
     display: inline-flex;
 }
 .administration-main nav{
-    width: 12em;
+    width: 15em;
     height: 100%;
     background-color: rgb(238, 238, 238);
     display: flex;
@@ -24,7 +24,7 @@
 .sections-content{
     width: 88em;
     height: auto;
-    margin-left: 12em;
+    /* margin-left: 12em; */
     overflow: auto;
 }
 .list-admin{
@@ -51,7 +51,7 @@
 .list-admin li:hover{
     background-color: rgb(201, 200, 200);
 }
-.list-admin a{
+.list-admin span{
     text-decoration: none;
     color: #000;
     padding-left: 10px;
@@ -67,4 +67,17 @@
 .visible {
     display: flex;
     flex-direction: column;
+}.A-h1{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+.A-p{
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    /* margin-top: 1rem; */
+    color: #464646;
 }

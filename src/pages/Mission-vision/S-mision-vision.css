@@ -1,0 +1,81 @@
+.Mvc-content {
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 50px auto;
+    max-width: 900px;
+}
+
+.card-mision,
+.card-vision {
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+
+
+.Mvc-h1 {
+    color: #333333;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.Mvc-p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.card-mision:hover,
+.card-vision:hover {
+    background-color: rgb(33, 33, 75);
+    color: white;
+    transform: translateY(-5px);
+}
+
+.h1-MV{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.p-MV{
+    width: 95%;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+/* Media Query para pantallas más pequeñas */
+@media only screen and (max-width: 768px) {
+    .Mvc-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-mision,
+    .card-vision {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .p-MV{
+        width: auto;
+        text-align: center;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}

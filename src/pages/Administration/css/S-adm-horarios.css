@@ -22,7 +22,10 @@
 }
 .add-horarios{
     width: 100%;
-    height: 100vh;
+    height: auto;
+}
+.add-horarios h2{
+    margin-bottom: 5rem;
 }
 .body-horarios form{
     width: 80vw;
@@ -103,7 +106,4 @@ td button{
 select{
     padding: 10px;
     margin-bottom: 1rem;
-}
-option{
-    padding: 10px;
 }

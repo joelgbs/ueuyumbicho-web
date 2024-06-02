@@ -1,14 +1,22 @@
 .content-us{
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+.C-box{
+    width: 100%;
+    display: flex;
+}
+.box-U{
+    width: auto;
+    margin-right: 2rem;
+}
 .formulario{
-    background-color: rgb(233, 233, 233);
+    /* background-color: rgb(233, 233, 233); */
     width: 40vw;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,7 +35,8 @@
 .formulario input{
     width: 95%;
     border: none;
-    border: 1px solid #000;
+    
+    border: 1px solid #9c9c9c;
     outline: none;
     border-radius: 0.5rem;
     margin: 0.5rem;
@@ -38,3 +47,48 @@
     -o-border-radius: 0.5rem;
 }
 
+.alerta-confirmacion{
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 1rem;
+    background-color: rgb(218, 218, 218);
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    position: fixed;
+}
+.alerta-confirmacion svg{
+    margin-right: 1rem;
+}
+table{
+    margin-top: 1rem;
+}
+table button{
+    text-align: center;
+    width: auto;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+    margin-left: 1rem;
+}
+.B-estado{
+    margin: auto;
+    border: 1px solid #000;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+.td-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

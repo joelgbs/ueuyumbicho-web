@@ -5,8 +5,8 @@ function cardHorarios(props){
   document.body.style.overflow = '';
     return(
       <div className="card-horarios">
-        {/* <h1>{props.curso}</h1>
-        <p>{props.alectivo}</p> */}
+        <h1>{props.curso}</h1>
+        <p>{props.alectivo}</p>
         <img src={props.image} alt="" />
       </div>
     );

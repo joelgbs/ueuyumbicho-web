@@ -40,7 +40,7 @@ function App() {
         <Route path="/Administracion" Component={Admin} />
         <Route path="/Editor" Component={Editors} />
         <Route path="/login" Component={LoginPass}/>
-        <Route path="/library" Component={LibratyVen}/>
+        <Route path="/libreria" Component={LibratyVen}/>
       </Routes>
     </Router>
   );

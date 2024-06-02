@@ -38,7 +38,7 @@ function Teachers() {
   const navigate = useNavigate();
   const handleClick = () => navigate('/Profesores');
   return (
-    <a onClick={handleClick} className='nav__link nav__link--inside'>Profesores</a>
+    <a onClick={handleClick} className='nav__link'>Profesores</a>
   );
 }
 
@@ -125,6 +125,13 @@ function Noticias() {
     <a onClick={handleClick} className='nav__link'>Noticias</a>
   );
 }
+function Libreria() {
+  const navigate = useNavigate();
+  const handleClick = () => navigate('/libreria');
+  return (
+    <a onClick={handleClick} className='nav__link'>Libreria escolar</a>
+  );
+}
 
 export {
   Home,
@@ -142,5 +149,6 @@ export {
   CarmentaWeb,
   HorariosClase,
   ReportesAcademicos,
-  Noticias
+  Noticias,
+  Libreria
 };

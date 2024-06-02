@@ -3,8 +3,6 @@ import firebase from 'firebase/compat/app'; // Importa Firebase v9 compat
 import 'firebase/compat/database'; // Importa el módulo de base de datos de Firebase
 import Cnav from '../../components/C-nav.jsx';
 import { NavMenuMobile, NavMenuMobileButton } from '../../components/C-nav-menu-mobile.jsx';
-import Minportada from '../../components/C-min-portada.jsx';
-import fotoportada from '../../assets/colegio/foto-patio-1.jpg';
 import './css/S-contact.css';
 
 // Configuración de Firebase
@@ -68,50 +66,54 @@ function Contact() {
     return (
         <div>
             {menuVisible && <NavMenuMobile BotonExitmenufloat={hideMenu} />}
-            <div className="section-page">
-                <Cnav showMenu={showMenu} />
-                <Minportada
-                    imagen={fotoportada}
-                    titulo='Contactanos'
-                />
-            </div>
+            <Cnav showMenu={showMenu} />
             <div className="contact-form">
-                <form className='form-contact' onSubmit={handleSubmit}>
-                    <textarea
-                        value={consulta}
-                        onChange={(e) => setConsulta(e.target.value)}
-                        placeholder='Escribe aqui tu consulta'
-                    />
-                    <div className="box">
-                        <label htmlFor="">Nombre completo: </label>
-                        <input
-                            type="text"
-                            value={nombre}
-                            onChange={(e) => setNombre(e.target.value)}
-                            placeholder='Name'
-                        />
-                    </div>
-                    <div className="box">
-                        <label htmlFor="">Correo Electronico</label>
-                        <input
-                            type="email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            placeholder='Email'
-                        />
-                    </div>
-                    <div className="box">
-                        <label htmlFor="">Telefono</label>
-                        <input
-                            type="text"
-                            value={telefono}
-                            onChange={(e) => setTelefono(e.target.value)}
-                            placeholder='091 111 111'
-                        />
-                    </div>
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
+                <h1 className='C-h1'>Contactanos</h1>
+                <p className='C-p'>¡Nos encantaría saber de ti! Si tienes alguna pregunta, sugerencia o simplemente quieres saludar, no dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte.</p>
+    <form className='form-contact' onSubmit={handleSubmit}>
+        <textarea
+            value={consulta}
+            onChange={(e) => setConsulta(e.target.value)}
+            placeholder='Escribe aquí tu consulta'
+            className='input-field'
+        />
+        <div className="box">
+            <label htmlFor="nombre">Nombre completo:</label>
+            <input
+                type="text"
+                id="nombre"
+                value={nombre}
+                onChange={(e) => setNombre(e.target.value)}
+                placeholder='Nombre'
+                className='input-field'
+            />
+        </div>
+        <div className="box">
+            <label htmlFor="email">Correo Electrónico:</label>
+            <input
+                type="email"
+                id="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder='Email'
+                className='input-field'
+            />
+        </div>
+        <div className="box">
+            <label htmlFor="telefono">Teléfono:</label>
+            <input
+                type="text"
+                id="telefono"
+                value={telefono}
+                onChange={(e) => setTelefono(e.target.value)}
+                placeholder='Teléfono'
+                className='input-field'
+            />
+        </div>
+        <button type="submit" className='submit-btn'>Enviar</button>
+    </form>
+</div>
+
         </div>
     );
 }

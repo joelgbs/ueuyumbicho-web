@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import PublicarNoticia from './components/C-form-editors';
+import CardNews from './components/C-card-news';
 
 function Editors(){
     document.body.style.overflow = '';
@@ -17,7 +19,10 @@ function Editors(){
     }, [navigate]);
 
     return(
-        <h1>Página de Editores</h1>
+        <div>
+            <PublicarNoticia/>
+            <CardNews/>
+        </div>
     );
 }
 

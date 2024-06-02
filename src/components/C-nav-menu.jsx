@@ -17,6 +17,7 @@ import {
     HorariosClase,
     ReportesAcademicos,
     Noticias,
+    Libreria
   } from './C-nav-menu-anchors.jsx';
 
 const DesktopNavMenu = () => {
@@ -24,8 +25,10 @@ const DesktopNavMenu = () => {
     <div className='menu-horizontal'>
       <Mn menuClass='menu'>
       <MnOption><Home/></MnOption>
+      {/* profesores */}
+      <MnOption> <Teachers/> </MnOption>
         {/* Oferta Educativa */}
-        <MnOptionSubmenu anchorName='Oferta Educativa'>
+        <MnOptionSubmenu anchorName='Oferta Académica'>
           <Mn menuClass='submenu'>
             <MnOption> <EducacionInicial/> </MnOption>
             <MnOption> <BasicaElementalMedia/> </MnOption>
@@ -41,12 +44,12 @@ const DesktopNavMenu = () => {
           </Mn>
         </MnOptionSubmenu>
         
-        {/* Nosotros */}
-        <MnOptionSubmenu anchorName='Nosotros'>
+        {/* Nosotros -institucion */}
+        <MnOptionSubmenu anchorName='Institución'>
           <Mn menuClass='submenu'>
           <MnOption> <QuienesSomos/> </MnOption>
           <MnOption> <MisionVision/> </MnOption>
-          <MnOption> <Teachers/> </MnOption>
+          <MnOption> <Contactanos/> </MnOption>
           </Mn>
         </MnOptionSubmenu>
 
@@ -55,20 +58,14 @@ const DesktopNavMenu = () => {
           <Mn menuClass='submenu'>
           <MnOption> <MatriculaAutomatica/> </MnOption>
           <MnOption> <CarmentaWeb/> </MnOption>
-          </Mn>
-        </MnOptionSubmenu>
-
-        {/* Estudiantes */}
-        <MnOptionSubmenu anchorName='Estudiantes'>
-          <Mn menuClass='submenu'>
           <MnOption> <HorariosClase/> </MnOption>
-          <MnOption> <ReportesAcademicos/> </MnOption>
+          {/* <MnOption> <ReportesAcademicos/> </MnOption> */}
           </Mn>
         </MnOptionSubmenu>
 
-        {/* Noticias y Contacto */}
+        {/* Noticias */}
         <MnOption> <Noticias/> </MnOption>
-        <MnOption> <Contactanos/> </MnOption>
+        <MnOption> <Libreria/> </MnOption>
       </Mn>
     </div>
   );

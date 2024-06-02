@@ -8,7 +8,7 @@
     background: var(--black-darker-t);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     /* display: none; */
 }
 .div-exit{
@@ -34,7 +34,7 @@
 }
 .floating-menu {
     width: 25em;
-    min-height: 40vh;
+    height: 100%;
     background-color: #fff;
     border-radius: 0.5rem;
     display: flex;

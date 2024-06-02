@@ -1,0 +1,173 @@
+.home-page-main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Hpm-sides{
+    width: 50vw;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.Hpm-h1{
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+}
+.Hpm-span{
+    font-size: 1.1rem;
+    margin-left: 1.5em;
+    margin-top: 0.5rem;
+    margin-right: 2rem;
+    color: #3b3b3b;
+}
+.Hpm-button-1{
+    width: 12em;
+    padding: 10px;
+    margin-left: 2rem;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: #000;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+.Hpm-button-2{
+    width: 12em;
+    padding: 10px;
+    margin-left: 2rem;
+    border: 1px solid #000;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+.mision-vision-content{
+    width: 100%;
+    height: auto;
+    
+}
+.Mvc-imagen-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Mvc-img{
+    width: 95%;
+    height: 20em;
+    background-image: url(../assets/foto-patio-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+    -webkit-border-radius: 1rem 1rem 0 0;
+    -moz-border-radius: 1rem 1rem 0 0;
+    -ms-border-radius: 1rem 1rem 0 0;
+    -o-border-radius: 1rem 1rem 0 0;
+}
+.Mvc-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Mvc-quienes-somos-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-quienes-somos{
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+.card-mision{
+    width: 50%;
+    height: 30vh;
+    text-align: center;
+}
+.card-vision{
+    width: 50%;
+    height: 30vh;
+    text-align: center;
+    /* background-color: yellowgreen; */
+}
+.ofertas-academicas-content{
+    width: 100%;
+    height: auto;
+}
+.Mvc-h1{
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.Mvc-p{
+    font-size: 1.1rem;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.h1-Oac{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+.P-Oac{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.Oac-content{
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.div-opiniones{
+    width: 100%;
+    height: 100vh;
+}
+footer{
+    width: 100%;
+    text-align: center;
+}
+@media only screen and (max-width: 768px) {
+    .Hpm-sides{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .Mvc-content{
+        width: 100%;
+        height: 100vh;
+    }
+    .card-quienes-somos{
+        width: 100%;
+    }
+    .card-mision{
+        width: 100%;
+    }
+    .card-vision{
+        width: 100%;
+    }
+  }
+  

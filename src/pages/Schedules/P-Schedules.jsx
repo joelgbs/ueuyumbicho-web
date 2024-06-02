@@ -3,8 +3,6 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/database';
 import Cnav from '../../components/C-nav.jsx';
 import { NavMenuMobile, NavMenuMobileButton } from '../../components/C-nav-menu-mobile.jsx';
-import Minportada from '../../components/C-min-portada.jsx';
-import fotoportada from '../../assets/colegio/foto-patio-1.jpg';
 import CardHorarios from './C-card-horarios';
 import './css/S-horarios.css';
 
@@ -28,47 +26,46 @@ function Horarios() {
 
   const showMenu = () => {
     setMenuVisible(true);
-    document.body.style.overflow = 'hidden'; // Deshabilita los scrolls en el body
+    document.body.style.overflow = 'hidden';
   };
 
   const hideMenu = () => {
     setMenuVisible(false);
-    document.body.style.overflow = ''; // Habilita los scrolls en el body
+    document.body.style.overflow = '';
   };
 
   useEffect(() => {
     const horariosRef = firebase.database().ref('horarios');
 
-    // Escucha cambios en la base de datos
-    horariosRef.on('child_added', (snapshot) => {
-      const horarioData = snapshot.val();
-      const newHorario = { id: snapshot.key, ...horarioData };
-      setHorarios((prevHorarios) => {
-        const updatedHorarios = [...prevHorarios, newHorario];
-        return updatedHorarios.sort((a, b) => courseOrder.indexOf(a.curso) - courseOrder.indexOf(b.curso));
-      });
-    });
+    // Escucha cambios en la base de datos solo una vez
+    horariosRef.once('value')
+      .then((snapshot) => {
+        const horariosData = snapshot.val();
+        if (horariosData) {
+          const horariosArray = Object.keys(horariosData).map(key => ({
+            id: key,
+            ...horariosData[key]
+          }));
+          setHorarios(horariosArray.sort((a, b) => courseOrder.indexOf(a.curso) - courseOrder.indexOf(b.curso)));
+        }
+      })
+      .catch(error => console.error("Error fetching horarios:", error));
 
     // Detener la escucha al desmontar el componente
-    return () => horariosRef.off('child_added');
+    return () => horariosRef.off();
   }, []);
 
   return (
     <div>
       {menuVisible && <NavMenuMobile BotonExitmenufloat={hideMenu} />}
-      <div className="section-page">
-        <Cnav showMenu={showMenu} />
-        <Minportada
-          imagen={fotoportada}
-          titulo='Horarios'
-        />
-      </div>
+      <Cnav showMenu={showMenu} />
       <div className="horarios-body">
+        <h1 className='H-h1'>Horarios de Clases</h1>
         {horarios.map((horario) => (
           <CardHorarios
-            // key={horario.id}
-            // curso={horario.curso}
-            // alectivo={horario.alectivo}
+            key={horario.id}
+            curso={horario.curso}
+            alectivo={horario.añoLectivo}
             image={horario.image}
           />
         ))}
@@ -76,5 +73,6 @@ function Horarios() {
     </div>
   );
 }
+
 
 export default Horarios;

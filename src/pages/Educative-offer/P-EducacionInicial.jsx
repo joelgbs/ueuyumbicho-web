@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import Cnav from '../../components/C-nav.jsx';
 import {NavMenuMobile, NavMenuMobileButton} from '../../components/C-nav-menu-mobile.jsx';
-import Minportada from '../../components/C-min-portada.jsx';
-import fotoportada from '../../assets/colegio/foto-patio-1.jpg';
+
 
 
 function EducacionInicial(){
@@ -21,10 +20,6 @@ function EducacionInicial(){
         {menuVisible && <NavMenuMobile BotonExitmenufloat={hideMenu} />}
         <div className="section-page">
         <Cnav showMenu={showMenu} />
-        <Minportada
-          imagen={fotoportada}
-          titulo='Educacion Inicial'
-        />
         </div>
       </div>
     );

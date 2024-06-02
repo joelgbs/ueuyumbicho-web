@@ -84,6 +84,7 @@ function Admin() {
                     </ul>
                 </nav>
                 <div className="sections-content">
+                    
                     <div className={`content-docentes ${visibleSection === 'docentes' ? 'visible' : 'hidden'}`}>
                         <Adocentes />
                         <Tabladocentes />
@@ -92,10 +93,9 @@ function Admin() {
                         <Ahorarios />
                         <Tablahorarios />
                     </div>
-                    <div className={`content-reportes ${visibleSection === 'reportes' ? 'visible' : 'hidden'}`}>
-                        {/* Contenido de reportes */}
+                    {/* <div className={`content-reportes ${visibleSection === 'reportes' ? 'visible' : 'hidden'}`}>
                         <h1>reportes</h1>
-                    </div>
+                    </div> */}
                     <div className={`content-noticias ${visibleSection === 'noticias' ? 'visible' : 'hidden'}`}>
                         {/* Contenido de noticias */}
                         <h1>noticias</h1>
@@ -105,12 +105,13 @@ function Admin() {
                     </div>
                     <div className={`content-mensajes ${visibleSection === 'mensajes' ? 'visible' : 'hidden'}`}>
                         {/* Contenido de mensajes directos */}
-                        <h1>mensajes</h1>
+                        <h2>Mensajes Directos</h2>
                         <MensajesTable/>
                     </div>
                     <div className={`usuarios-admin ${visibleSection === 'admin' ? 'visible' : 'hidden'}`}>
                         {/* Contenido de usuarios admin */}
-                        <h1>Administracion</h1>
+                        <h1 className='A-h1'>Agregar Administradores</h1>
+                        <p className='A-p'>Ingresa los datos</p>
                         <AformUsuarios
                             seccionformulario='administracion'
                         />
@@ -120,7 +121,8 @@ function Admin() {
                     </div>
                     <div className={`usuarios-estudiantes ${visibleSection === 'estudiantes' ? 'visible' : 'hidden'}`}>
                         {/* Contenido de usuarios estudiantes */}
-                        <h1>Estudiantes</h1>
+                        <h1 className='A-h1'>Agregar estudiantes</h1>
+                        <p className='A-p'>Ingresa los datos del estudiante</p>
                         <AformUsuarios
                             seccionformulario='estudiantes'
                         />
@@ -130,7 +132,8 @@ function Admin() {
                     </div>
                     <div className={`usuarios-periodismo ${visibleSection === 'periodismo' ? 'visible' : 'hidden'}`}>
                         {/* Contenido de usuarios c. periodismo */}
-                        <h1>Periodismo</h1>
+                        <h1 className='A-h1'>Agregar Int. Club de periodismo</h1>
+                        <p className='A-p'>Ingresa los datos </p>
                         <AformUsuarios
                             seccionformulario='periodismo'
                         />

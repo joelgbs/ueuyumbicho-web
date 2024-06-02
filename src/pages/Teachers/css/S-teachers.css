@@ -6,6 +6,11 @@
     justify-content: center;
     flex-direction: column;
 }
+.teacher-body h1{
+    font-size: 3rem;
+    font-weight: 400;
+}
+
 .card-content-T{
     /* background-color: yellowgreen; */
     width: 75em;
@@ -24,7 +29,7 @@
     justify-content: center;
 }
 .imagen-teacher img{
-    height: 100%;
+    height: 90%;
 }
 .info-teacher{
     width: 70%;
@@ -33,12 +38,27 @@
     display: flex;
     flex-direction: column;
 }
+.info-teacher h1{
+    font-size: 2.5rem;
+    font-weight:400;
+}
+.info-teacher span{
+    font-size: 1.5rem;
+    color: rgb(88, 88, 88);
+}
+.info-teacher p{
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+.S-teachers{
+    width: 100%;
+}
 @media screen and (max-width: 1024px) {
     .card-content-T{
         /* background-color: yellowgreen; */
-        width: 100%;
+        width: 95%;
         height: 100vh;
-        padding: 10px;
+        padding: 0;
         display: flex;
         flex-direction: column;
     }

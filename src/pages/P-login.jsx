@@ -35,7 +35,7 @@ const generateToken = () => {
 };
 
 function LoginPass(){
-    const [email, setEmail] = useState("");
+    const [loginId, setLoginId] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
 
@@ -45,7 +45,14 @@ function LoginPass(){
         try {
             const userTypes = ['administracion', 'estudiantes', 'periodismo'];
             for (const userType of userTypes) {
-                const snapshot = await firebase.database().ref(userType).orderByChild('email').equalTo(email).once('value');
+                let snapshot;
+                if (loginId.includes('@')) {
+                    // Inicio de sesión por correo electrónico
+                    snapshot = await firebase.database().ref(userType).orderByChild('email').equalTo(loginId).once('value');
+                } else {
+                    // Inicio de sesión por nombre de usuario
+                    snapshot = await firebase.database().ref(userType).orderByChild('usuario').equalTo(loginId).once('value');
+                }
                 if (snapshot.exists()) {
                     const userData = snapshot.val();
                     const userId = Object.keys(userData)[0];
@@ -91,12 +98,13 @@ function LoginPass(){
         <div className="LoginPass-content">
             <form onSubmit={handleSubmit}>
                 <img src={Logoueu} alt="" />
-                <h2>Login</h2>
-                <label htmlFor="email">Email</label>
-                <input type="text" id="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" />
+                <h1 className="L-h1">Login</h1>
+                <p className="L-p">¡Estamos encantados de verte otra vez! Por favor, ingresa tus credenciales para acceder a tu cuenta.</p>
+                <label htmlFor="loginId">Email/Usuario</label>
+                <input type="text" id="loginId" value={loginId} onChange={(e) => setLoginId(e.target.value)} placeholder="Email o Usuario" />
                 <label htmlFor="password">Password</label>
                 <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="********" />
-                <button type="submit">Login</button>
+                <button type="submit">Iniciar Sesion</button>
             </form>
         </div>
     );

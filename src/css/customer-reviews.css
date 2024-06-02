@@ -27,12 +27,13 @@
 }
 
 .textareaopinion{
-    height: 10vh;
+    height: 15vh;
     width: 70vw;
     padding: 10px;
     outline: none;
     margin: 0.5rem;
     transition: 0.5s;
+    border: 1px solid #000;
 }
 
 .textareaopinion:focus {
@@ -88,4 +89,12 @@ form button:hover {
     white-space: normal;
     font-size: 0.8em;
     text-align: center;
+}
+.h1-opiniones{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.span-opiniones{
+    font-size: 0.9rem;
+    color: #3a3a3a;
 }
