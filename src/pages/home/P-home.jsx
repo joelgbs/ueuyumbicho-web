@@ -12,6 +12,9 @@ import Esuperior from './assets/foto-estudiantes-4.jpeg';
 import Ebachillerato from './assets/foto-estudiantes.jpeg';
 import Einicial from './assets/jardin.png';
 import Ebasica from './assets/escuela.png';
+import ContDesProf from './components/C-card-home-profesores.jsx';
+import GrupoLibros from '../library/components/C-grupo-libros.jsx'
+
 function Home() {
   document.body.style.overflow = '';
   const [menuVisible, setMenuVisible] = useState(false);
@@ -26,53 +29,6 @@ function Home() {
     document.body.style.overflow = ''; // Habilita los scrolls en el body
   };
 
-  const containerRef = useRef(null);
-
-  const handleMouseDown = (e) => {
-      const container = containerRef.current;
-      container.isDown = true;
-      container.startX = e.pageX - container.offsetLeft;
-      container.scrollLeft = container.scrollLeft;
-  };
-
-  const handleMouseLeave = () => {
-      const container = containerRef.current;
-      container.isDown = false;
-  };
-
-  const handleMouseUp = () => {
-      const container = containerRef.current;
-      container.isDown = false;
-  };
-
-  const handleMouseMove = (e) => {
-      const container = containerRef.current;
-      if (!container.isDown) return;
-      e.preventDefault();
-      const x = e.pageX - container.offsetLeft;
-      const walk = (x - container.startX) * 2; // Ajusta la velocidad de desplazamiento
-      container.scrollLeft = container.scrollLeft - walk;
-  };
-
-  const handleTouchStart = (e) => {
-      const container = containerRef.current;
-      container.isDown = true;
-      container.startX = e.touches[0].pageX - container.offsetLeft;
-      container.scrollLeft = container.scrollLeft;
-  };
-
-  const handleTouchEnd = () => {
-      const container = containerRef.current;
-      container.isDown = false;
-  };
-
-  const handleTouchMove = (e) => {
-      const container = containerRef.current;
-      if (!container.isDown) return;
-      const x = e.touches[0].pageX - container.offsetLeft;
-      const walk = (x - container.startX) * 2; // Ajusta la velocidad de desplazamiento
-      container.scrollLeft = container.scrollLeft - walk;
-  };
   return (
     <div className="App">
       {menuVisible && <NavMenuMobile BotonExitmenufloat={hideMenu} />}
@@ -81,16 +37,17 @@ function Home() {
         <div className="Hpm-sides">
           <h1 className='Hpm-h1'>Bievenido a la Unidad Educativa Uyumbicho</h1>
           <span className='Hpm-span'>La Unidad Educativa Uyumbicho ofrece una educación de calidad en un entorno inspirador. Con un enfoque en valores, innovación y desarrollo integral, preparamos a nuestros estudiantes para un futuro prometedor. En Uyumbicho, cultivamos el pensamiento crítico, la creatividad y el respeto por el medio ambiente, brindando a cada estudiante la oportunidad de crecer y prosperar.</span>
-        </div>
-        <div className="Hpm-sides">
           <button className='Hpm-button-1'>Ofertas Academicas</button>
           <button className='Hpm-button-2'>Noticias</button>
         </div>
-      </div>
-      <div className="mision-vision-content">
-        <div className="Mvc-imagen-content">
+        <div className="Hpm-sides HS-img">
         <div className="Mvc-img"></div>
         </div>
+      </div>
+      <div className="mision-vision-content">
+        {/* <div className="Mvc-imagen-content">
+        <div className="Mvc-img"></div>
+        </div> */}
         {/* <div className="Mvc-quienes-somos-content">
           <div className="card-quienes-somos">
           <h1 className='Mvc-h1'>¿Quienes somos?</h1>
@@ -112,13 +69,7 @@ function Home() {
         <h1 className='h1-Oac'>Conoce nuestras Ofertas Academicas</h1>
         <p className='P-Oac'>La Unidad Educativa Uyumbicho brinda una amplia variedad de programas académicos diseñados para satisfacer las necesidades e intereses individuales de nuestros estudiantes.</p>
         <div className="Oac-content">
-          <div 
-            className="oac-card-content"
-            onTouchStart={handleTouchStart}
-            onTouchMove={handleTouchMove}
-            onTouchEnd={handleTouchEnd}
-            ref={containerRef}
-          >
+          <div className="oac-card-content">
           <Card
             imagen={Einicial}
             title='Educacion Inicial'
@@ -144,6 +95,20 @@ function Home() {
             link='/bachillerato-general-unificado'
           />
           </div>
+        </div>
+      </div>
+      <div className="profesores-content">
+        <h1 className='h1-Oac'>Conoce a nuestros docentes</h1>
+        <p className='P-Oac'>Contamos con los mejores docentes en el canton mejia</p>
+        <div className="Oac-content">
+          <ContDesProf/>
+        </div>
+      </div>
+      <div className="libros-content C-S-Co">
+        <h1 className='h1-Oac'>Libreria</h1>
+        <p className='P-Oac'>Nuestra amplia libreria ofrece una gran cantidad de libros que los jovenes pueden disfrutar</p>
+        <div className="Oac-content">
+        <GrupoLibros genero='ensayo' />
         </div>
       </div>
       <div className='div-opiniones'>

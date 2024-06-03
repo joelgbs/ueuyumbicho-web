@@ -14,8 +14,15 @@
 .news-span{
     margin-left: 2rem;
 }
+.content-news-cards{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .content-news-cards img{
-    height: 50vh;
+    max-height: 50vh;
+    max-width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
 }

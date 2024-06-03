@@ -3,15 +3,28 @@
     height: auto;
     display: flex;
     flex-wrap: wrap;
+    /* background-color: rgb(20, 20, 39);
+    color: white; */
 }
+/* .Lg-1{
+    background-color: rgb(20, 20, 39);
+}
+.Lg-2{
+    background-color: rgb(0, 0, 19);
+} */
 .Hpm-sides{
     width: 45vw;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     height: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+.HS-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .Hpm-h1{
     font-size: 2.5em;
@@ -24,11 +37,12 @@
     margin-left: 1.5em;
     margin-top: 0.5rem;
     margin-right: 2rem;
-    color: #3b3b3b;
+    /* color: #3b3b3b; */
 }
 .Hpm-button-1{
     width: 12em;
     padding: 10px;
+    margin-top: 2rem;
     margin-left: 2rem;
     border-radius: 0.5rem;
     color: white;
@@ -69,11 +83,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 1rem 1rem 0 0;
-    -webkit-border-radius: 1rem 1rem 0 0;
-    -moz-border-radius: 1rem 1rem 0 0;
-    -ms-border-radius: 1rem 1rem 0 0;
-    -o-border-radius: 1rem 1rem 0 0;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
 }
 .Mvc-content{
     width: 100%;
@@ -107,6 +121,13 @@
 .ofertas-academicas-content{
     width: 100%;
     height: auto;
+    background-color: rgb(20, 20, 39);
+    color: white;
+    padding-bottom: 10px;
+}
+.C-S-Co{
+    background-color: rgb(20, 20, 39);
+    color: white;
 }
 .Mvc-h1{
     font-size: 2rem;
@@ -129,6 +150,8 @@
     margin-top: 1rem;
 }
 .P-Oac{
+    font-size: 0.9rem;
+    margin-top: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -150,16 +173,13 @@ footer{
     text-align: center;
 }
 .oac-card-content {
-    display: flex; /* Usar flexbox para alineación horizontal */
-    overflow-x: auto; /* Permite el desplazamiento horizontal */
-    white-space: nowrap; /* Evita el salto de línea dentro del contenedor */
-    scroll-behavior: smooth; /* Desplazamiento suave al usar scroll */
-    -webkit-overflow-scrolling: touch; /* Suaviza el desplazamiento en dispositivos iOS */
-    touch-action: pan-x; /* Permite solo el desplazamiento horizontal */
-    padding: 10px; /* Asegura que haya espacio alrededor del contenido */
-    box-sizing: border-box; /* Incluye padding y border en el ancho total */
-    width: 100vw; /* Asegura que ocupe el ancho total de la pantalla */
-    overflow-y: hidden; /* Oculta el desbordamiento vertical */
+    width: 100%; /* Ancho completo del contenedor padre */
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: nowrap; /* Evita que los elementos se envuelvan a la siguiente línea */
+    overflow-x: auto; /* Agrega una barra de desplazamiento horizontal si el contenido desborda */
+    overflow-y: hidden;
 }
 
 @media only screen and (max-width: 768px) {

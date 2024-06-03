@@ -71,7 +71,7 @@ function LoginPass(){
                                     navigate("/Administracion");
                                     break;
                                 case 'estudiantes':
-                                    navigate("/library");
+                                    navigate("/libreria");
                                     break;
                                 case 'periodismo':
                                     navigate("/Editor");

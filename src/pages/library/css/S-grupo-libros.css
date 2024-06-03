@@ -1,0 +1,8 @@
+.slider-libros {
+    width: 100%; /* Ancho completo del contenedor padre */
+    height: auto;
+    display: inline-flex;
+    flex-wrap: nowrap; /* Evita que los elementos se envuelvan a la siguiente línea */
+    overflow-x: auto; /* Agrega una barra de desplazamiento horizontal si el contenido desborda */
+    overflow-y: hidden;
+}
