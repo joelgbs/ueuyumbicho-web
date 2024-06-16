@@ -1,0 +1,25 @@
+.libro-card{
+    width: 12em; /* Establece un ancho máximo para evitar que la tarjeta se expanda demasiado */
+    height: auto; /* Permite que la altura se ajuste automáticamente según el contenido */
+    padding: 10px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    cursor: pointer;
+    flex: 0 0 auto;
+}
+
+.libro-card img{
+    width: 90%; /* Ajusta el ancho de la imagen según sea necesario */
+}
+.libro-card h4 {
+    margin-top: 0.5rem;
+    overflow-wrap: anywhere; /* Rompe las palabras incluso si no hay espacios */
+}
+.libro-card p {
+    font-size: 0.8rem;
+    color: rgb(148, 148, 148);
+    margin-top: 0.5rem;
+    overflow-wrap: anywhere; /* Rompe las palabras incluso si no hay espacios */
+}

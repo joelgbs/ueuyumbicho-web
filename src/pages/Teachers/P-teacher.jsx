@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import Cnav from '../../components/C-nav.jsx';
-import { NavMenuMobile, NavMenuMobileButton } from '../../components/C-nav-menu-mobile.jsx';
-import './css/S-teachers.css';
+import React, { useState } from 'react';
+import { NavMenuMobile } from '../components/nav-mobile.jsx';
+import Cnav from '../components/nav.jsx';
 import SectionTeachers from './C-sections-teachers.jsx';
+import './css/S-teachers.css';
+
 function Teachers() {
   const [menuVisible, setMenuVisible] = useState(false);
 

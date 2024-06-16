@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/database';
-import Cnav from '../../components/C-nav.jsx';
-import { NavMenuMobile, NavMenuMobileButton } from '../../components/C-nav-menu-mobile.jsx';
+import React, { useEffect, useState } from 'react';
+import { NavMenuMobile } from '../components/nav-mobile.jsx';
+import Cnav from '../components/nav.jsx';
 import CardHorarios from './C-card-horarios';
 import './css/S-horarios.css';
 

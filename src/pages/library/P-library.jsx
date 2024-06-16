@@ -1,28 +1,17 @@
-import React, { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import './css/S-libreria.css'
+import React from 'react';
+import './css/S-libreria.css';
 import LogoLibreria from './assets/logo-libreria-removebg-preview.png';
-import ImagenLibreria from './assets/Pair-programming.png'
+import ImagenLibreria from './assets/Pair-programming.png';
 import GrupoLibros from './components/C-grupo-libros';
 
 function LibratyVen() {
     document.body.style.overflow = '';
-    const navigate = useNavigate();
-
-    useEffect(() => {
-        // Verificar si hay un token almacenado en el almacenamiento local
-        const token = localStorage.getItem('token');
-        if (!token) {
-            // Si no hay token, redirigir al usuario a la ventana de inicio de sesión
-            navigate('/login');
-        }
-    }, [navigate]);
 
     return (
         <div className='body-libreria'>
             <div className="seccion-principal">
                 <nav className='nav-libreria'>
-                    <img src={LogoLibreria} alt="" />
+                    <img src={LogoLibreria} alt="Logo Libreria" />
                     <h1>Libreria</h1>
                 </nav>
                 <div className="informacion-principal">
@@ -32,7 +21,7 @@ function LibratyVen() {
                         <button>Contribuir</button>
                     </div>
                     <div className="contenedor-sides-img">
-                        <img src={ImagenLibreria} alt="" />
+                        <img src={ImagenLibreria} alt="Imagen Libreria" />
                     </div>
                 </div>
             </div>
@@ -101,7 +90,6 @@ function LibratyVen() {
                 <p>Descubre el pasado a través de relatos y análisis históricos.</p>
                 <GrupoLibros genero='historico' />
             </div>
-
         </div>
     );
 }

@@ -1,0 +1,48 @@
+.carousel {
+    max-width: 100%;
+    position: relative; /* Añade posición relativa para alinear los botones */
+}
+
+.carousel-content {
+    display: flex;
+    transition: transform 0.5s ease; /* Agrega una transición suave para el desplazamiento */
+}
+
+.carousel-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 100%; /* Hace que cada slide ocupe el 100% del contenedor */
+}
+
+.carousel-btn {
+    position: absolute;
+    /*Ajustalaposiciónabsolutadelosbotones*/top: 50%;
+    /*Alineaverticalmentealcentro*/transform: translateY(-50%);
+    /*Alineaverticalmentealcentro*/width: 40px;
+    /*Defineelanchodelosbotones*/height: 40px;
+    /*Definelaalturadelosbotones*/background-color: rgba(0, 0, 0, 0.5);
+    /*Agregaunfondosemi-transparente*/color: #fff;
+    /*Cambiaelcolordeltextoablanco*/border: none;
+    /*Eliminaelborde*/border-radius: 50%;
+    /*Hacequelosbotonesseanredondos*/font-size: 20px;
+    /*Defineeltamañodeltexto*/cursor: pointer;
+    /*Cambiaelcursoraunamano*/transition: background-color 0.3s ease;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Cambia el color de fondo al pasar el mouse */
+}
+
+.carousel-btn.prev {
+    left: 10px; /* Alinea el botón izquierdo */
+}
+
+.carousel-btn.next {
+    right: 10px; /* Alinea el botón derecho */
+}
+

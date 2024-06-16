@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import Cnav from '../../components/C-nav.jsx';
-import { NavMenuMobile, NavMenuMobileButton } from '../../components/C-nav-menu-mobile.jsx';
-import './css/S-news.css';
-import Cnews from './compents/C-news-card.jsx';
 import firebase from 'firebase/compat/app'; // Importa Firebase v9 compat
 import 'firebase/compat/database'; // Importa el módulo de base de datos de Firebase
+import React, { useEffect, useState } from 'react';
+import { NavMenuMobile } from '../components/nav-mobile.jsx';
+import Cnav from '../components/nav.jsx';
+import Cnews from './compents/C-news-card.jsx';
+import './css/S-news.css';
 
 // Función para capitalizar la primera letra de una cadena
 const capitalizeFirstLetter = (string) => {

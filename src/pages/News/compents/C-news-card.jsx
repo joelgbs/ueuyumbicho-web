@@ -1,6 +1,6 @@
 import React from "react";
 import '../css/S-news-card.css'
-import Carousel from '../../../components/C-carrusel'
+import Carousel from '../../components/carrusel'
 
 function Cnews(props){
     return(

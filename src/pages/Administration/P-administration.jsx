@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './css/S-administration.css';
 import { useNavigate } from 'react-router-dom';
-import ErrorPage from '../P-error.jsx';
+import ErrorPage from '../error.jsx';
 import { Adocentes, Tabladocentes } from './P-adm-Docentes.jsx';
 import { Ahorarios, Tablahorarios } from './P-adm-horarios.jsx';
 import Aopiniones from './P-adm-Opiniones.jsx';

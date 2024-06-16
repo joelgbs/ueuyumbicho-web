@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
 import firebase from "firebase/compat/app";
 import "firebase/compat/database";
+import React, { useState } from "react";
 import './css/S-adm-usuarios.css';
 
 
